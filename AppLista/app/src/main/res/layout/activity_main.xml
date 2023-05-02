@@ -21,13 +21,13 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/editNomedoAluno"
+        android:id="@+id/editNomedoCurso"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_margin="16dp"
         android:layout_marginTop="8dp"
         android:ems="10"
-        android:hint="@string/text_hint_edit_nome_do_aluno"
+        android:hint="@string/text_hint_edit_nome_do_curso"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -71,7 +71,7 @@
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editNomedoAluno" />
+        app:layout_constraintTop_toBottomOf="@+id/editNomedoCurso" />
 
     <Button
         android:id="@+id/btnLimpar"

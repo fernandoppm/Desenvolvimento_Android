@@ -1,9 +1,9 @@
 <resources>
     <string name="app_name">AppLista</string>
-    <string name="txt_titulo">Dados do responsável</string>
+    <string name="txt_titulo">Inscrição para Cursos</string>
     <string name="text_hint_edit_primeiro_nome">Primeiro Nome</string>
     <string name="txt_hint_edit_sobrenome">Sobrenome</string>
-    <string name="text_hint_edit_nome_do_aluno">Nome do Aluno</string>
+    <string name="text_hint_edit_nome_do_curso">Nome do Curso Desejado</string>
     <string name="txt_hint_edit_telefone_de_contato">Telefone de Contato</string>
     <string name="txt_button_limpar">LIMPAR</string>
     <string name="txt_button_salvar">SALVAR</string>
