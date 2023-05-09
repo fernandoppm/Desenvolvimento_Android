@@ -17,6 +17,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
+        android:id="@+id/txtTítuloApp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
@@ -26,21 +27,12 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/editPrimeiroNome"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view2"
+        app:layout_constraintVertical_bias="1.0"
         tools:ignore="MissingConstraints" />
 
-    <EditText
-        android:id="@+id/editNomedoCurso"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:layout_margin="16dp"
-        android:layout_marginTop="8dp"
-        android:ems="10"
-        android:hint="@string/text_hint_edit_nome_do_curso"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editSobrenome" />
 
     <EditText
         android:id="@+id/editPrimeiroNome"
@@ -66,6 +58,19 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editPrimeiroNome" />
+
+    <EditText
+        android:id="@+id/editNomedoCurso"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_margin="16dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/text_hint_edit_nome_do_curso"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editSobrenome" />
 
     <EditText
         android:id="@+id/editTelefonedeContato"

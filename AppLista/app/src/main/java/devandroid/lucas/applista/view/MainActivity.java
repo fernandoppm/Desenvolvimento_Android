@@ -3,6 +3,7 @@ package devandroid.lucas.applista.view;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 
 import devandroid.lucas.applista.R;
 import devandroid.lucas.applista.model.Pessoa;
@@ -52,6 +53,7 @@ public class MainActivity extends AppCompatActivity {
         dadosOutraPessoa += outraPessoa.getTelefoneContato();
 
 
-
+        Log.i("POOAndroid", pessoa.toString());
+        Log.i("POOAndroid", outraPessoa.toString());
     }
 }
