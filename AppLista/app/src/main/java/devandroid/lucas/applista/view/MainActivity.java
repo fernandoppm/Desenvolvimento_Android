@@ -36,9 +36,9 @@ public class MainActivity extends AppCompatActivity {
         pessoa = new Pessoa();
 
         outraPessoa = new Pessoa();
-        outraPessoa.setPrimeiroNome("Maria");
-        outraPessoa.setSobrenome("Fatima");
-        outraPessoa.setCursoDesejado("Python");
+        outraPessoa.setPrimeiroNome("Charles");
+        outraPessoa.setSobrenome("Bruno");
+        outraPessoa.setCursoDesejado("Direito");
         outraPessoa.setTelefoneContato("81-77567788");
 
         editPrimeiroNome = findViewById(R.id.editPrimeiroNome);
