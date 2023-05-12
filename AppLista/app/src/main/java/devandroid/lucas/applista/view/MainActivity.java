@@ -17,6 +17,7 @@ import devandroid.lucas.applista.model.Pessoa;
 public class MainActivity extends AppCompatActivity {
 
     SharedPreferences preferences;
+    SharedPreferences.Editor lista;
     public static final String NOME_PREFERENCES = "pref_lista";
 
     PessoaController controller;
@@ -40,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         preferences = getSharedPreferences(NOME_PREFERENCES, 0);
-        SharedPreferences.Editor lista = preferences.edit();
+        lista = preferences.edit();
 
 
         controller = new PessoaController();
@@ -74,6 +75,10 @@ public class MainActivity extends AppCompatActivity {
                 editSobrenome.setText("");
                 editNomedoCurso.setText("");
                 editTelefonedeContato.setText("");
+
+                lista.clear();
+                lista.apply();
+
             }
         });
 
