@@ -16,13 +16,9 @@ import devandroid.lucas.applista.model.Pessoa;
 
 public class MainActivity extends AppCompatActivity {
 
-    SharedPreferences preferences;
-    SharedPreferences.Editor lista;
-    public static final String NOME_PREFERENCES = "pref_lista";
 
     PessoaController controller;
     Pessoa pessoa;
-    Pessoa outraPessoa;
 
 
     EditText editPrimeiroNome;
@@ -40,18 +36,13 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().hide();
         setContentView(R.layout.activity_main);
 
-        preferences = getSharedPreferences(NOME_PREFERENCES, 0);
-        lista = preferences.edit();
 
-
-        controller = new PessoaController();
+        controller = new PessoaController(MainActivity.this);
         controller.toString();
 
-        pessoa = new Pessoa();
-        pessoa.setPrimeiroNome(preferences.getString("primeiroNome", ""));
-        pessoa.setSobrenome(preferences.getString("Sobrenome", ""));
-        pessoa.setCursoDesejado(preferences.getString("nomeCurso", ""));
-        pessoa.setTelefoneContato(preferences.getString("telefoneContato", ""));
+         pessoa = new Pessoa();
+
+       controller.buscar(pessoa);
 
         editPrimeiroNome = findViewById(R.id.editPrimeiroNome);
         editSobrenome = findViewById(R.id.editSobrenome);
@@ -76,8 +67,7 @@ public class MainActivity extends AppCompatActivity {
                 editNomedoCurso.setText("");
                 editTelefonedeContato.setText("");
 
-                lista.clear();
-                lista.apply();
+                controller.limpar();
 
             }
         });
@@ -101,11 +91,6 @@ public class MainActivity extends AppCompatActivity {
 
                 Toast.makeText(MainActivity.this, "Salvo" + pessoa.toString(), Toast.LENGTH_LONG).show();
 
-                lista.putString("primeiroNome",pessoa.getPrimeiroNome());
-                lista.putString("Sobrenome",pessoa.getSobrenome());
-                lista.putString("nomeCurso",pessoa.getCursoDesejado());
-                lista.putString("telefoneContato",pessoa.getTelefoneContato());
-                lista.apply();
 
                 controller.salvar(pessoa);
             }
