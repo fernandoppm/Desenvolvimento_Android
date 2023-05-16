@@ -4,6 +4,10 @@ public class Curso {
 
     private String CursoDesejado;
 
+    public Curso(String cursoDesejado) {
+        this.CursoDesejado = cursoDesejado;
+    }
+
 
     public String getCursoDesejado() {
         return CursoDesejado;
