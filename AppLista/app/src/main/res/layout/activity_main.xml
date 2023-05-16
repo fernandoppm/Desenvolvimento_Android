@@ -87,22 +87,22 @@
 
     <Spinner
         android:id="@+id/spinner"
-        android:layout_width="409dp"
+        android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         app:layout_constraintBottom_toTopOf="@+id/btnFinalizar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTelefonedeContato"
-        app:layout_constraintVertical_bias="0.17" />
+        app:layout_constraintVertical_bias="0.236" />
 
     <Button
         android:id="@+id/btnLimpar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
+        android:layout_marginStart="24dp"
         android:layout_marginBottom="80dp"
         android:text="@string/txt_button_limpar"
         app:layout_constraintBottom_toTopOf="@+id/btnFinalizar"
@@ -114,9 +114,11 @@
         android:id="@+id/txtSpiner"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:text="@string/txt_selecione_um_curso"
         android:textSize="20sp"
         android:textStyle="bold"
+        android:textColor="#808080"
         app:layout_constraintBottom_toTopOf="@+id/spinner"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -126,11 +128,11 @@
         android:id="@+id/btnSalvar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="172dp"
+        android:layout_marginEnd="20dp"
         android:layout_marginBottom="80dp"
         android:text="@string/txt_button_salvar"
         app:layout_constraintBottom_toTopOf="@+id/btnFinalizar"
-        app:layout_constraintStart_toEndOf="@+id/btnLimpar"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTelefonedeContato"
         app:layout_constraintVertical_bias="1.0" />
 
@@ -148,7 +150,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTelefonedeContato"
         app:layout_constraintVertical_bias="0.761" />
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
