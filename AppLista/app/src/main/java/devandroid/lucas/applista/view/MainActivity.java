@@ -96,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
         btnFinalizar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "Muito Obrigado, Volte Sempre", Toast.LENGTH_LONG).show();
+                Toast.makeText(MainActivity.this, "Muito Obrigado", Toast.LENGTH_LONG).show();
                 finish();
             }
         });
